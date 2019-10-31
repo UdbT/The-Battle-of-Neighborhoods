@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_bad28b2a2cb44ab391afc0ce1b683f4a {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_bad28b2a2cb44ab391afc0ce1b683f4a" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_bad28b2a2cb44ab391afc0ce1b683f4a = L.map(
+                                  'map_bad28b2a2cb44ab391afc0ce1b683f4a',
+                                  {center: [51.5073219,-0.1276474],
+                                  zoom: 10,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_3dcd4e94aabd4f78bc7d307897a3fca8 = L.tileLayer(
+                'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_bad28b2a2cb44ab391afc0ce1b683f4a);
+        
+    
+            var circle_marker_3e8785b665424d9c808e7b2eaf99226c = L.circleMarker(
+                [51.5217668,-0.130190717056655],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.25
+}
+                ).addTo(map_bad28b2a2cb44ab391afc0ce1b683f4a);
+            
+    
+            var popup_94e710b88f474e84bd5a00d7ea6dc78e = L.popup({maxWidth: '300'});
+
+            
+                var html_ae5a0d12a57343ff990634b91659d85b = $('<div id="html_ae5a0d12a57343ff990634b91659d85b" style="width: 100.0%; height: 100.0%;">Birkbeck, University of London</div>')[0];
+                popup_94e710b88f474e84bd5a00d7ea6dc78e.setContent(html_ae5a0d12a57343ff990634b91659d85b);
+            
+
+            circle_marker_3e8785b665424d9c808e7b2eaf99226c.bindPopup(popup_94e710b88f474e84bd5a00d7ea6dc78e);
+
+            
+        
+    
+            var circle_marker_8414fe8232e3459ba38e8d9b4202c443 = L.circleMarker(
+                [51.53255315,-0.473993562050575],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.25
+}
+                ).addTo(map_bad28b2a2cb44ab391afc0ce1b683f4a);
+            
+    
+            var popup_a3fd18c6d9dc4cb4aebb2972ad7bcee3 = L.popup({maxWidth: '300'});
+
+            
+                var html_43ba36701b8d48f59acdf0c041ccf5e1 = $('<div id="html_43ba36701b8d48f59acdf0c041ccf5e1" style="width: 100.0%; height: 100.0%;">Brunel University London</div>')[0];
+                popup_a3fd18c6d9dc4cb4aebb2972ad7bcee3.setContent(html_43ba36701b8d48f59acdf0c041ccf5e1);
+            
+
+            circle_marker_8414fe8232e3459ba38e8d9b4202c443.bindPopup(popup_a3fd18c6d9dc4cb4aebb2972ad7bcee3);
+
+            
+        
+    
+            var circle_marker_2c1878280543482a9095fe0277ddd8d5 = L.circleMarker(
+                [51.52767845,-0.10348336610602],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.25
+}
+                ).addTo(map_bad28b2a2cb44ab391afc0ce1b683f4a);
+            
+    
+            var popup_9c4cddda2665486bbf37c5acdd1ac9ca = L.popup({maxWidth: '300'});
+
+            
+                var html_4abb37a48be64dffac665b5236944e27 = $('<div id="html_4abb37a48be64dffac665b5236944e27" style="width: 100.0%; height: 100.0%;">City, University of London</div>')[0];
+                popup_9c4cddda2665486bbf37c5acdd1ac9ca.setContent(html_4abb37a48be64dffac665b5236944e27);
+            
+
+            circle_marker_2c1878280543482a9095fe0277ddd8d5.bindPopup(popup_9c4cddda2665486bbf37c5acdd1ac9ca);
+
+            
+        
+    
+            var circle_marker_00b5a4f7feeb4c59b4efac1ec4819014 = L.circleMarker(
+                [51.47403955,-0.0393492813292085],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.25
+}
+                ).addTo(map_bad28b2a2cb44ab391afc0ce1b683f4a);
+            
+    
+            var popup_596cf8fdb9774846815984bc31d85e4d = L.popup({maxWidth: '300'});
+
+            
+                var html_b851c1c4451c480a8d1630fa623734b9 = $('<div id="html_b851c1c4451c480a8d1630fa623734b9" style="width: 100.0%; height: 100.0%;">Goldsmiths, University of London</div>')[0];
+                popup_596cf8fdb9774846815984bc31d85e4d.setContent(html_b851c1c4451c480a8d1630fa623734b9);
+            
+
+            circle_marker_00b5a4f7feeb4c59b4efac1ec4819014.bindPopup(popup_596cf8fdb9774846815984bc31d85e4d);
+
+            
+        
+    
+            var circle_marker_9170a3c6b1f745d2b68e75e0702ec285 = L.circleMarker(
+                [51.49887085,-0.175607955839404],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.25
+}
+                ).addTo(map_bad28b2a2cb44ab391afc0ce1b683f4a);
+            
+    
+            var popup_2bb55dff75d8475ea5f86a828f5de4fe = L.popup({maxWidth: '300'});
+
+            
+                var html_0fe122d5312f4a2391dfe1582837e966 = $('<div id="html_0fe122d5312f4a2391dfe1582837e966" style="width: 100.0%; height: 100.0%;">Imperial College London</div>')[0];
+                popup_2bb55dff75d8475ea5f86a828f5de4fe.setContent(html_0fe122d5312f4a2391dfe1582837e966);
+            
+
+            circle_marker_9170a3c6b1f745d2b68e75e0702ec285.bindPopup(popup_2bb55dff75d8475ea5f86a828f5de4fe);
+
+            
+        
+    
+            var circle_marker_2c53c22ce23240a19c442f66c0806407 = L.circleMarker(
+                [51.4698444,-0.0892785984924762],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.25
+}
+                ).addTo(map_bad28b2a2cb44ab391afc0ce1b683f4a);
+            
+    
+            var popup_6727af1914274b84a79c77ed85b60bd9 = L.popup({maxWidth: '300'});
+
+            
+                var html_1058290759a84fff8d9e2f7dbfaf6eda = $('<div id="html_1058290759a84fff8d9e2f7dbfaf6eda" style="width: 100.0%; height: 100.0%;">King&#39;s College London</div>')[0];
+                popup_6727af1914274b84a79c77ed85b60bd9.setContent(html_1058290759a84fff8d9e2f7dbfaf6eda);
+            
+
+            circle_marker_2c53c22ce23240a19c442f66c0806407.bindPopup(popup_6727af1914274b84a79c77ed85b60bd9);
+
+            
+        
+    
+            var circle_marker_ba7c3f14994541f3ad217d7041508966 = L.circleMarker(
+                [51.4032656,-0.3044647],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.25
+}
+                ).addTo(map_bad28b2a2cb44ab391afc0ce1b683f4a);
+            
+    
+            var popup_a4dd0d5332f547dba73d7b7f2eb21d63 = L.popup({maxWidth: '300'});
+
+            
+                var html_115951e1382d4fcaabc6b481008e0a91 = $('<div id="html_115951e1382d4fcaabc6b481008e0a91" style="width: 100.0%; height: 100.0%;">Kingston University</div>')[0];
+                popup_a4dd0d5332f547dba73d7b7f2eb21d63.setContent(html_115951e1382d4fcaabc6b481008e0a91);
+            
+
+            circle_marker_ba7c3f14994541f3ad217d7041508966.bindPopup(popup_a4dd0d5332f547dba73d7b7f2eb21d63);
+
+            
+        
+    
+            var circle_marker_cbc5f0e59cd4418cab44d3273ecb789d = L.circleMarker(
+                [51.5484391,-0.106033785310014],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.25
+}
+                ).addTo(map_bad28b2a2cb44ab391afc0ce1b683f4a);
+            
+    
+            var popup_e7a3761436da4fa3b966df91194a1e97 = L.popup({maxWidth: '300'});
+
+            
+                var html_bdcf2997b38f4620be74a0598b10fbf6 = $('<div id="html_bdcf2997b38f4620be74a0598b10fbf6" style="width: 100.0%; height: 100.0%;">London Metropolitan University</div>')[0];
+                popup_e7a3761436da4fa3b966df91194a1e97.setContent(html_bdcf2997b38f4620be74a0598b10fbf6);
+            
+
+            circle_marker_cbc5f0e59cd4418cab44d3273ecb789d.bindPopup(popup_e7a3761436da4fa3b966df91194a1e97);
+
+            
+        
+    
+            var circle_marker_43643bbdaac649b192fb0ec172d3bf31 = L.circleMarker(
+                [51.51442905,-0.116588403365376],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.25
+}
+                ).addTo(map_bad28b2a2cb44ab391afc0ce1b683f4a);
+            
+    
+            var popup_377dee39069d4107ad7d8760d0b40ec1 = L.popup({maxWidth: '300'});
+
+            
+                var html_1676121093964b4fb7305d1ce23677cf = $('<div id="html_1676121093964b4fb7305d1ce23677cf" style="width: 100.0%; height: 100.0%;">London School of Economics</div>')[0];
+                popup_377dee39069d4107ad7d8760d0b40ec1.setContent(html_1676121093964b4fb7305d1ce23677cf);
+            
+
+            circle_marker_43643bbdaac649b192fb0ec172d3bf31.bindPopup(popup_377dee39069d4107ad7d8760d0b40ec1);
+
+            
+        
+    
+            var circle_marker_d315f62b527e4cb6a4ddc5e84e1ee127 = L.circleMarker(
+                [51.497788,-0.101859261561486],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.25
+}
+                ).addTo(map_bad28b2a2cb44ab391afc0ce1b683f4a);
+            
+    
+            var popup_0bf9fd5306a24a6992f11e95c751693c = L.popup({maxWidth: '300'});
+
+            
+                var html_601c6c38726741c29949b5088f1f14fc = $('<div id="html_601c6c38726741c29949b5088f1f14fc" style="width: 100.0%; height: 100.0%;">London South Bank University</div>')[0];
+                popup_0bf9fd5306a24a6992f11e95c751693c.setContent(html_601c6c38726741c29949b5088f1f14fc);
+            
+
+            circle_marker_d315f62b527e4cb6a4ddc5e84e1ee127.bindPopup(popup_0bf9fd5306a24a6992f11e95c751693c);
+
+            
+        
+    
+            var circle_marker_8ef72142408440de9441e20c243269c5 = L.circleMarker(
+                [51.59029705,-0.229632209454029],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.25
+}
+                ).addTo(map_bad28b2a2cb44ab391afc0ce1b683f4a);
+            
+    
+            var popup_c834e953e70d481eaab5f4e8b2ca08bc = L.popup({maxWidth: '300'});
+
+            
+                var html_16800866097848cf9385f611f0651a6b = $('<div id="html_16800866097848cf9385f611f0651a6b" style="width: 100.0%; height: 100.0%;">Middlesex University</div>')[0];
+                popup_c834e953e70d481eaab5f4e8b2ca08bc.setContent(html_16800866097848cf9385f611f0651a6b);
+            
+
+            circle_marker_8ef72142408440de9441e20c243269c5.bindPopup(popup_c834e953e70d481eaab5f4e8b2ca08bc);
+
+            
+        
+    
+            var circle_marker_941852ec9b174f0f81b9d1d2d8d4b65e = L.circleMarker(
+                [51.5247272,-0.0393103466301624],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.25
+}
+                ).addTo(map_bad28b2a2cb44ab391afc0ce1b683f4a);
+            
+    
+            var popup_fe8d3c0a3d5f438a89e4f689d563907f = L.popup({maxWidth: '300'});
+
+            
+                var html_7d6b1cab550c496796d60ddb4c4cc1f4 = $('<div id="html_7d6b1cab550c496796d60ddb4c4cc1f4" style="width: 100.0%; height: 100.0%;">Queen Mary University of London</div>')[0];
+                popup_fe8d3c0a3d5f438a89e4f689d563907f.setContent(html_7d6b1cab550c496796d60ddb4c4cc1f4);
+            
+
+            circle_marker_941852ec9b174f0f81b9d1d2d8d4b65e.bindPopup(popup_fe8d3c0a3d5f438a89e4f689d563907f);
+
+            
+        
+    
+            var circle_marker_a437ee2dc6e34b5883a95e59106ded9e = L.circleMarker(
+                [51.5016671,0.00573774782309864],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.25
+}
+                ).addTo(map_bad28b2a2cb44ab391afc0ce1b683f4a);
+            
+    
+            var popup_1f82e199d7d2496d88fdbb0bd5ef92fe = L.popup({maxWidth: '300'});
+
+            
+                var html_9e6fcbea8d504220bd071b9a6143df09 = $('<div id="html_9e6fcbea8d504220bd071b9a6143df09" style="width: 100.0%; height: 100.0%;">Ravensbourne University London</div>')[0];
+                popup_1f82e199d7d2496d88fdbb0bd5ef92fe.setContent(html_9e6fcbea8d504220bd071b9a6143df09);
+            
+
+            circle_marker_a437ee2dc6e34b5883a95e59106ded9e.bindPopup(popup_1f82e199d7d2496d88fdbb0bd5ef92fe);
+
+            
+        
+    
+            var circle_marker_33d0b2e790d74d40a86e116bd72f80f7 = L.circleMarker(
+                [51.5184204,-0.1308916],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.25
+}
+                ).addTo(map_bad28b2a2cb44ab391afc0ce1b683f4a);
+            
+    
+            var popup_6c49f473526c4412bda8ec0168bed5b3 = L.popup({maxWidth: '300'});
+
+            
+                var html_4ed585f4adc74ea5a98a80daa7a450b2 = $('<div id="html_4ed585f4adc74ea5a98a80daa7a450b2" style="width: 100.0%; height: 100.0%;">Royal Holloway, University of London</div>')[0];
+                popup_6c49f473526c4412bda8ec0168bed5b3.setContent(html_4ed585f4adc74ea5a98a80daa7a450b2);
+            
+
+            circle_marker_33d0b2e790d74d40a86e116bd72f80f7.bindPopup(popup_6c49f473526c4412bda8ec0168bed5b3);
+
+            
+        
+    
+            var circle_marker_ba6b23ac1f114ed99067544d8d41a895 = L.circleMarker(
+                [51.52207465,-0.128926171526777],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.25
+}
+                ).addTo(map_bad28b2a2cb44ab391afc0ce1b683f4a);
+            
+    
+            var popup_4895a20bb784432cb1486747b73f269c = L.popup({maxWidth: '300'});
+
+            
+                var html_f65c37d16f2f457c8f08d961c91b9510 = $('<div id="html_f65c37d16f2f457c8f08d961c91b9510" style="width: 100.0%; height: 100.0%;">SOAS, University of London</div>')[0];
+                popup_4895a20bb784432cb1486747b73f269c.setContent(html_f65c37d16f2f457c8f08d961c91b9510);
+            
+
+            circle_marker_ba6b23ac1f114ed99067544d8d41a895.bindPopup(popup_4895a20bb784432cb1486747b73f269c);
+
+            
+        
+    
+            var circle_marker_9230546c20204c7d847fe1c51d87f903 = L.circleMarker(
+                [51.4276362,-0.1750439],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.25
+}
+                ).addTo(map_bad28b2a2cb44ab391afc0ce1b683f4a);
+            
+    
+            var popup_9f93d3f908ca4bb6ba819f18dd579475 = L.popup({maxWidth: '300'});
+
+            
+                var html_dc0bcdf8df214c5fa3f8df2ba2df9a9a = $('<div id="html_dc0bcdf8df214c5fa3f8df2ba2df9a9a" style="width: 100.0%; height: 100.0%;">St George&#39;s, University of London</div>')[0];
+                popup_9f93d3f908ca4bb6ba819f18dd579475.setContent(html_dc0bcdf8df214c5fa3f8df2ba2df9a9a);
+            
+
+            circle_marker_9230546c20204c7d847fe1c51d87f903.bindPopup(popup_9f93d3f908ca4bb6ba819f18dd579475);
+
+            
+        
+    
+            var circle_marker_4d8137fdb3c244039ad48d13392802a8 = L.circleMarker(
+                [51.43620475,-0.334175339610712],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.25
+}
+                ).addTo(map_bad28b2a2cb44ab391afc0ce1b683f4a);
+            
+    
+            var popup_99288936a4e34138931b3ec54d47b2c9 = L.popup({maxWidth: '300'});
+
+            
+                var html_a5d38e64c7744fd8add847352b263cdb = $('<div id="html_a5d38e64c7744fd8add847352b263cdb" style="width: 100.0%; height: 100.0%;">St Mary&#39;s University, Twickenham</div>')[0];
+                popup_99288936a4e34138931b3ec54d47b2c9.setContent(html_a5d38e64c7744fd8add847352b263cdb);
+            
+
+            circle_marker_4d8137fdb3c244039ad48d13392802a8.bindPopup(popup_99288936a4e34138931b3ec54d47b2c9);
+
+            
+        
+    
+            var circle_marker_63c2c70aee3b48a6b175f9612c9f98d5 = L.circleMarker(
+                [51.5231607,-0.1282037],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.25
+}
+                ).addTo(map_bad28b2a2cb44ab391afc0ce1b683f4a);
+            
+    
+            var popup_456f4af8417e41a19758f79eb36ae87a = L.popup({maxWidth: '300'});
+
+            
+                var html_8dfe6b2d7aae43d3bc3460aef69aaeb8 = $('<div id="html_8dfe6b2d7aae43d3bc3460aef69aaeb8" style="width: 100.0%; height: 100.0%;">University College London</div>')[0];
+                popup_456f4af8417e41a19758f79eb36ae87a.setContent(html_8dfe6b2d7aae43d3bc3460aef69aaeb8);
+            
+
+            circle_marker_63c2c70aee3b48a6b175f9612c9f98d5.bindPopup(popup_456f4af8417e41a19758f79eb36ae87a);
+
+            
+        
+    
+            var circle_marker_59e27b06b23c4e6497290469feef7774 = L.circleMarker(
+                [51.50717505,0.0649520517279515],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.25
+}
+                ).addTo(map_bad28b2a2cb44ab391afc0ce1b683f4a);
+            
+    
+            var popup_fd8c1a512d014b70b0f6d70fdfabaff1 = L.popup({maxWidth: '300'});
+
+            
+                var html_fc8b9d1757d44285b2ef3b707acc52c6 = $('<div id="html_fc8b9d1757d44285b2ef3b707acc52c6" style="width: 100.0%; height: 100.0%;">University of East London</div>')[0];
+                popup_fd8c1a512d014b70b0f6d70fdfabaff1.setContent(html_fc8b9d1757d44285b2ef3b707acc52c6);
+            
+
+            circle_marker_59e27b06b23c4e6497290469feef7774.bindPopup(popup_fd8c1a512d014b70b0f6d70fdfabaff1);
+
+            
+        
+    
+            var circle_marker_5e4e311cde134c94a232e811325b96b7 = L.circleMarker(
+                [51.4825423,-0.0066531],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.25
+}
+                ).addTo(map_bad28b2a2cb44ab391afc0ce1b683f4a);
+            
+    
+            var popup_ae0ca50de83448be9d0a6b85d050ca21 = L.popup({maxWidth: '300'});
+
+            
+                var html_e6d66dbfef7348d99f139357627d9199 = $('<div id="html_e6d66dbfef7348d99f139357627d9199" style="width: 100.0%; height: 100.0%;">University of Greenwich</div>')[0];
+                popup_ae0ca50de83448be9d0a6b85d050ca21.setContent(html_e6d66dbfef7348d99f139357627d9199);
+            
+
+            circle_marker_5e4e311cde134c94a232e811325b96b7.bindPopup(popup_ae0ca50de83448be9d0a6b85d050ca21);
+
+            
+        
+    
+            var circle_marker_7d510e39ae2b403ead223aefc1f6ca18 = L.circleMarker(
+                [51.4579899,-0.2454756],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.25
+}
+                ).addTo(map_bad28b2a2cb44ab391afc0ce1b683f4a);
+            
+    
+            var popup_27f55b6d3f79430091e4f498849250fb = L.popup({maxWidth: '300'});
+
+            
+                var html_e2790a02ba004cc4b1ef44196f616386 = $('<div id="html_e2790a02ba004cc4b1ef44196f616386" style="width: 100.0%; height: 100.0%;">University of Roehampton</div>')[0];
+                popup_27f55b6d3f79430091e4f498849250fb.setContent(html_e2790a02ba004cc4b1ef44196f616386);
+            
+
+            circle_marker_7d510e39ae2b403ead223aefc1f6ca18.bindPopup(popup_27f55b6d3f79430091e4f498849250fb);
+
+            
+        
+    
+            var circle_marker_36bcab2c18364e6f83f88627c778d522 = L.circleMarker(
+                [51.5176423,-0.116388847605798],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.25
+}
+                ).addTo(map_bad28b2a2cb44ab391afc0ce1b683f4a);
+            
+    
+            var popup_6c18b81e2ad342589478b76678b6ed46 = L.popup({maxWidth: '300'});
+
+            
+                var html_d32174f257134da9904d0f7eed3ebd61 = $('<div id="html_d32174f257134da9904d0f7eed3ebd61" style="width: 100.0%; height: 100.0%;">University of the Arts London</div>')[0];
+                popup_6c18b81e2ad342589478b76678b6ed46.setContent(html_d32174f257134da9904d0f7eed3ebd61);
+            
+
+            circle_marker_36bcab2c18364e6f83f88627c778d522.bindPopup(popup_6c18b81e2ad342589478b76678b6ed46);
+
+            
+        
+    
+            var circle_marker_0be5026e983f4d6e9ab9419175f75aae = L.circleMarker(
+                [51.5070185,-0.302807536541409],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.25
+}
+                ).addTo(map_bad28b2a2cb44ab391afc0ce1b683f4a);
+            
+    
+            var popup_c0920ff43ec74ad2ac3afff251e6c4da = L.popup({maxWidth: '300'});
+
+            
+                var html_f71a62cc66c8496d971db5c0653b2ac8 = $('<div id="html_f71a62cc66c8496d971db5c0653b2ac8" style="width: 100.0%; height: 100.0%;">University of West London</div>')[0];
+                popup_c0920ff43ec74ad2ac3afff251e6c4da.setContent(html_f71a62cc66c8496d971db5c0653b2ac8);
+            
+
+            circle_marker_0be5026e983f4d6e9ab9419175f75aae.bindPopup(popup_c0920ff43ec74ad2ac3afff251e6c4da);
+
+            
+        
+    
+            var circle_marker_0c560ed0eb894b0f8098efa1310129c0 = L.circleMarker(
+                [51.5209064,-0.140072974263335],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.25
+}
+                ).addTo(map_bad28b2a2cb44ab391afc0ce1b683f4a);
+            
+    
+            var popup_a1c5094ffca947a3ae919a99232d0fd0 = L.popup({maxWidth: '300'});
+
+            
+                var html_e594a65d4af64d95aeaf94c78d312696 = $('<div id="html_e594a65d4af64d95aeaf94c78d312696" style="width: 100.0%; height: 100.0%;">University of Westminster</div>')[0];
+                popup_a1c5094ffca947a3ae919a99232d0fd0.setContent(html_e594a65d4af64d95aeaf94c78d312696);
+            
+
+            circle_marker_0c560ed0eb894b0f8098efa1310129c0.bindPopup(popup_a1c5094ffca947a3ae919a99232d0fd0);
+
+            
+        
+</script>
